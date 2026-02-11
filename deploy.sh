@@ -35,6 +35,12 @@ echo -e "\n${BLUE}[1/5] Menginstal Dependensi Sistem...${NC}"
 apt-get update
 apt-get install -y curl git apt-transport-https ca-certificates software-properties-common certbot python3-certbot-nginx python3-pip
 
+# Fix Permission Denied for scripts
+echo -e "${BLUE}Mengatur izin eksekusi script...${NC}"
+chmod +x docker-entrypoint.sh
+chmod +x deploy.sh
+chmod +x update.sh
+
 # Fix AttributeError: module 'lib' has no attribute 'X509_V_FLAG_NOTIFY_POLICY'
 echo -e "${BLUE}Memperbaiki dependensi OpenSSL/Cryptography...${NC}"
 pip3 install --upgrade pyOpenSSL cryptography

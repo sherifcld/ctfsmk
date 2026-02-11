@@ -20,6 +20,11 @@ fi
 echo -e "${BLUE}Menarik perubahan terbaru dari GitHub...${NC}"
 git pull origin main
 
+echo -e "${BLUE}Mengatur izin eksekusi script...${NC}"
+chmod +x docker-entrypoint.sh
+chmod +x deploy.sh
+chmod +x update.sh
+
 echo -e "${BLUE}Membangun ulang dan merestart container...${NC}"
 docker-compose up -d --build
 docker-compose -f docker-compose.challenges.yml up -d --build
