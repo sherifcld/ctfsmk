@@ -1,0 +1,105 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CTFd\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: Sherif <she0rif@example.com>\n"
+"Language-Team: Indonesian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"Language: id\n"
+
+msgid "Challenges"
+msgstr "Tantangan"
+
+msgid "Users"
+msgstr "Pengguna"
+
+msgid "Teams"
+msgstr "Tim"
+
+msgid "Scoreboard"
+msgstr "Papan Skor"
+
+msgid "Notifications"
+msgstr "Notifikasi"
+
+msgid "Settings"
+msgstr "Pengaturan"
+
+msgid "Admin Panel"
+msgstr "Panel Admin"
+
+msgid "Login"
+msgstr "Masuk"
+
+msgid "Register"
+msgstr "Daftar"
+
+msgid "Logout"
+msgstr "Keluar"
+
+msgid "Password"
+msgstr "Kata Sandi"
+
+msgid "Username"
+msgstr "Nama Pengguna"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Website"
+msgstr "Situs Web"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Team"
+msgstr "Tim"
+
+msgid "Name"
+msgstr "Nama"
+
+msgid "Solve"
+msgstr "Selesaikan"
+
+msgid "Solves"
+msgstr "Penyelesaian"
+
+msgid "Points"
+msgstr "Poin"
+
+msgid "Rank"
+msgstr "Peringkat"
+
+msgid "Category"
+msgstr "Kategori"
+
+msgid "Description"
+msgstr "Deskripsi"
+
+msgid "Value"
+msgstr "Nilai"
+
+msgid "Type"
+msgstr "Tipe"
+
+msgid "Correct"
+msgstr "Benar"
+
+msgid "Incorrect"
+msgstr "Salah"
+
+msgid "Already Solved"
+msgstr "Sudah Diselesaikan"
+
+msgid "Flag"
+msgstr "Flag"
+
+msgid "Submit"
+msgstr "Kirim"
+
+msgid "Powered by CTFd"
+msgstr "Ditenagai oleh CTFd"
