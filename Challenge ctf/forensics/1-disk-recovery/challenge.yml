@@ -1,0 +1,14 @@
+name: "Log Analysis"
+author: "Admin"
+category: "Forensics"
+description: "Server kami baru saja diserang. Seseorang mencoba mencuri database kami menggunakan teknik Blind SQL Injection. Bisakah kamu merekonstruksi password admin dari log yang ada?"
+value: 150
+type: standard
+
+flags:
+  - "CTF{bl1nd_sql1_l0g_4n4lys1s}"
+
+files:
+  - access.log
+
+state: visible

@@ -1,0 +1,14 @@
+name: "Memory Analysis"
+author: "Admin"
+category: "Forensics"
+description: "Kami menemukan aktivitas mencurigakan pada workstation salah satu karyawan. Kami berhasil mengambil dump memorinya. Apa yang dilakukan malware tersebut?\n\nFiles provided: evidence.txt"
+value: 250
+type: standard
+
+flags:
+  - "CTF{memory_analysis_is_cool}"
+
+files:
+  - evidence.txt
+
+state: visible

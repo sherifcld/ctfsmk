@@ -1,0 +1,14 @@
+name: "RSA Broadcast"
+author: "Admin"
+category: "Cryptography"
+description: "Pesan yang sama dikirim ke 3 penerima berbeda dengan modulus yang berbeda tetapi exponent e=3 yang sama.\n\nFiles provided: output.txt"
+value: 350
+type: standard
+
+flags:
+  - "CTF{br04dc4st_4tt4ck_1s_cl4ss1c_RSA}"
+
+files:
+  - output.txt
+
+state: visible

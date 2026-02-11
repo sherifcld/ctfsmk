@@ -1,0 +1,14 @@
+name: "Hidden Number Problem"
+author: "Admin"
+category: "Cryptography"
+description: "Kami memberikan beberapa bit paling signifikan dari (a_i * alpha) % p. Bisakah kamu menemukan alpha?\n\nFiles provided: output.txt"
+value: 500
+type: standard
+
+flags:
+  - "CTF{l4tt1c3_b4s3d_hnp_1s_r34lly_h4rd_992}"
+
+files:
+  - output.txt
+
+state: visible

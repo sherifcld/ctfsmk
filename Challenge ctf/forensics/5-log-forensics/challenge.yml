@@ -1,0 +1,14 @@
+name: "Log Forensics"
+author: "Admin"
+category: "Forensics"
+description: "Seorang penyusup berhasil masuk ke server kami. Cari tahu apa yang mereka ambil!\n\nFiles provided: logs.txt"
+value: 400
+type: standard
+
+flags:
+  - "CTF{th3_tr41l_l34ds_t0_th3_r00t}"
+
+files:
+  - logs.txt
+
+state: visible

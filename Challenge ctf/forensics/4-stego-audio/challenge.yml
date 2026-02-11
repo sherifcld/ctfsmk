@@ -1,0 +1,14 @@
+name: "Audio Steganography"
+author: "Admin"
+category: "Forensics"
+description: "Ada pesan rahasia yang tersembunyi di dalam file audio ini. Bisakah kamu mendengarnya? Atau mungkin kamu harus melihat lebih dalam...\n\nFiles provided: stego.py (example extractor)"
+value: 350
+type: standard
+
+flags:
+  - "CTF{lsb_4ud10_st3g0_1s_tr1cky}"
+
+files:
+  - stego.py
+
+state: visible

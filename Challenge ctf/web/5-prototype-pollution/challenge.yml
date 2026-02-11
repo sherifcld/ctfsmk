@@ -1,0 +1,11 @@
+name: "Prototype Pollution"
+author: "Admin"
+category: "Web Exploitation"
+description: "Update profilmu di server Node.js kami yang super cepat!\n\nTarget: http://challenge.ctf:3000/update-profile"
+value: 450
+type: standard
+
+flags:
+  - "CTF{pr0t0typ3_p0llut1on_2_rc3}"
+
+state: visible

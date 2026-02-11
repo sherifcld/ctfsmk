@@ -1,0 +1,14 @@
+name: "RSA Related Message"
+author: "Admin"
+category: "Cryptography"
+description: "Dua pesan yang sangat mirip (m2 = m1 + 1337) dienkripsi dengan modulus yang sama.\n\nFiles provided: output.txt"
+value: 450
+type: standard
+
+flags:
+  - "CTF{fr4nkl1n_r31t3r_r3l4t3d_m3ss4g3_4tt4ck}"
+
+files:
+  - output.txt
+
+state: visible

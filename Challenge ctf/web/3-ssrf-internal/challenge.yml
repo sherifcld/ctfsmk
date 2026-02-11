@@ -1,0 +1,11 @@
+name: "SSRF Internal"
+author: "Admin"
+category: "Web Exploitation"
+description: "Kami memiliki proxy internal untuk mengambil konten dari web lain. Kami sudah memblokir localhost dan 127.0.0.1 untuk keamanan maksimal.\n\nTarget: http://challenge.ctf:5002/proxy?url=..."
+value: 350
+type: standard
+
+flags:
+  - "CTF{ssrf_t0_1nt3rn4l_h0st_f0und}"
+
+state: visible

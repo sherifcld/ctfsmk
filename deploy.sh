@@ -133,6 +133,26 @@ else
     echo -e "\033[0;31mGagal menginstal SSL. Pastikan domain $DOMAIN sudah diarahkan ke IP server ini.\033[0m"
 fi
 
-echo -e "\n${BLUE}[5/5] Selesai!${NC}"
+echo -e "\n${BLUE}[5/5] Mengimpor Tantangan Default...${NC}"
+echo -e "Untuk mengimpor tantangan secara otomatis, Anda memerlukan API Token Admin."
+echo -e "1. Login ke https://$DOMAIN/admin"
+echo -e "2. Buka User Settings -> Access Tokens"
+echo -e "3. Generate token baru dan masukkan di bawah ini."
+read -p "Masukkan API Token Admin (Kosongkan jika ingin lewati): " TOKEN
+
+if [ ! -z "$TOKEN" ]; then
+    sed -i "s/GANTI_DENGAN_TOKEN_ADMIN_ANDA/$TOKEN/g" challenges/import_challenges.py
+    sed -i "s|http://localhost:8000|https://$DOMAIN|g" challenges/import_challenges.py
+    
+    # Jalankan import di dalam container atau di host
+    if command -v python3 &> /dev/null; then
+        pip3 install requests &> /dev/null
+        python3 challenges/import_challenges.py
+    else
+        echo "Python3 tidak ditemukan, lewati impor tantangan."
+    fi
+fi
+
+echo -e "\n${BLUE}Selesai!${NC}"
 echo -e "${GREEN}Website SMK NEGERI 1 TANJUNG LAGO CTF siap diakses di: https://$DOMAIN${NC}"
 echo -e "Gunakan 'docker-compose logs -f' untuk melihat log sistem."

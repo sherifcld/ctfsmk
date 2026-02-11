@@ -1,0 +1,14 @@
+name: "PCAP Decryption"
+author: "Admin"
+category: "Forensics"
+description: "Kami mencegat komunikasi antara client dan server. Sepertinya mereka menggunakan enkripsi kustom yang sangat sederhana.\n\nFiles provided: stream.txt"
+value: 300
+type: standard
+
+flags:
+  - "CTF{pcap_x0r_d3crypt1on_fun}"
+
+files:
+  - stream.txt
+
+state: visible

@@ -1,0 +1,20 @@
+--- auth.log ---
+Feb 11 10:00:01 server sshd[1234]: Accepted password for webuser from 1.2.3.4 port 5678 ssh2
+Feb 11 10:05:12 server sudo: webuser : TTY=pts/0 ; PWD=/home/webuser ; USER=root ; COMMAND=/usr/bin/find / -name flag.txt
+
+--- .bash_history ---
+ls -la
+cd /var/www/html
+cat config.php
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+sudo find / -name flag.txt
+cat /root/flag.txt | base64
+exit
+
+--- config.php ---
+<?php
+  $db_user = "admin";
+  $db_pass = "S3cur3P4ssw0rd!@#";
+  // The flag is not here, but maybe it's in the DB?
+  // CTF{th3_tr41l_l34ds_t0_th3_r00t}
+?>

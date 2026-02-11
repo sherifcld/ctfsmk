@@ -1,0 +1,14 @@
+name: "Padding Oracle"
+author: "Admin"
+category: "Cryptography"
+description: "Tukang roti kami kehilangan kunci untuk membuka oven. Bisakah kamu membantunya? Server ini memungkinkan kamu untuk mendekripsi pesan, tetapi hanya memberitahu jika paddingnya valid."
+value: 250
+type: standard
+
+flags:
+  - "CTF{p4dd1ng_0r4cl3_1s_st1ll_r3l3v4nt_2026}"
+
+files:
+  - server.py
+
+state: visible

@@ -1,0 +1,14 @@
+# Volatility 3 output for memory.dmp
+# Tasklist:
+# 0xfa8003f4a060  System                 4      0     96      0      0  2026-02-11 09:45:12
+# 0xfa8005374060  explorer.exe        1232   1112     32      0      0  2026-02-11 09:46:00
+# 0xfa8006456060  notepad.exe         3412   1232      1      0      0  2026-02-11 09:50:00
+# 0xfa8007123060  malicious.exe       6666   1232      5      0      0  2026-02-11 10:05:00
+
+# Cmdline for malicious.exe:
+# C:\Users\Admin\Downloads\malicious.exe --connect 13.37.13.37 --port 4444 --secret Q1RGem1lbW9yeV9hbmFseXNpc19pcyVjb29s
+
+# Filescan:
+# 0x000000003f4a1230  \Users\Admin\Documents\flag.txt.enc
+
+# What is the flag? (Base64 decode the secret and follow the clues)

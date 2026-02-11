@@ -1,0 +1,14 @@
+name: "ECDSA Nonce Reuse"
+author: "Admin"
+category: "Cryptography"
+description: "Kenapa harus pakai angka random yang berbeda tiap saat? Seseorang menggunakan nonce k yang sama untuk dua tanda tangan berbeda.\n\nFiles provided: output.txt"
+value: 300
+type: standard
+
+flags:
+  - "CTF{n0nc3_r3us3_d3str0ys_ECDSA_123}"
+
+files:
+  - output.txt
+
+state: visible

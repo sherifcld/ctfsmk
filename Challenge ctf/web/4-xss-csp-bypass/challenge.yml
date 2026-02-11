@@ -1,0 +1,11 @@
+name: "XSS CSP Bypass"
+author: "Admin"
+category: "Web Exploitation"
+description: "Website kami memiliki filter XSS yang... yah, tidak ada. Tapi jangan khawatir, kami menggunakan Content Security Policy (CSP) yang sangat ketat!\n\nTarget: http://challenge.ctf:5003/?name=..."
+value: 400
+type: standard
+
+flags:
+  - "CTF{xss_csp_bypass_via_cdn}"
+
+state: visible
