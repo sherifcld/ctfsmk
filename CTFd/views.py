@@ -195,7 +195,7 @@ def setup():
                 '</div>'
                 '<div class="cyber-info-box p-4 mb-5">'
                 '<p class="lead mb-4">SELAMAT DATANG DI PLATFORM CTF RESMI SMK NEGERI 1 TANJUNG LAGO</p>'
-                '<p class="mb-4">Web dikembangkan oleh <strong>SMK</strong> dan <strong>Sherif</strong></p>'
+                '<p class="mb-4">Web dikembangkan oleh <strong>SMK NEGERI 1 TANJUNG LAGO</strong> dan <strong>Sherif</strong></p>'
                 '<div class="d-flex justify-content-center gap-3">'
                 '<a href="https://smkn1tanjunglago.sch.id" class="btn btn-primary cyber-btn" target="_blank">WEBSITE SEKOLAH</a>'
                 '<a href="https://t.me/she0rif" class="btn btn-primary cyber-btn" target="_blank">TELEGRAM ADMIN</a>'
