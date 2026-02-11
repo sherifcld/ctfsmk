@@ -217,19 +217,20 @@ def setup():
 
             # Splice in our banner
             index = f"""<div class="row">
-    <div class="col-md-6 offset-md-3">
-        <img class="w-100 mx-auto d-block" style="max-width: 500px;padding: 50px;padding-top: 14vh;" src="{default_ctf_banner_location}" />
-        <h3 class="text-center">
-            <p>A cool CTF platform from <a href="https://ctfd.io">ctfd.io</a></p>
-            <p>Follow us on social media:</p>
-            <a href="https://twitter.com/ctfdio"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>&nbsp;
-            <a href="https://facebook.com/ctfdio"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>&nbsp;
-            <a href="https://github.com/ctfd"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-        </h3>
-        <br>
-        <h4 class="text-center">
-            <a href="admin">Click here</a> to login and setup your CTF
-        </h4>
+    <div class="col-md-12 text-center mt-5">
+        <div class="cyber-logo-container mb-5">
+            <h1 class="cyber-glitch-title" data-text="SMK NEGERI 1 TANJUNG LAGO">SMK NEGERI 1 TANJUNG LAGO</h1>
+            <h2 class="cyber-subtitle" data-text="CYBER DEFENSE CTF">CYBER DEFENSE CTF</h2>
+        </div>
+        <div class="cyber-info-box p-4 mb-5">
+            <p class="lead mb-4">SELAMAT DATANG DI PLATFORM CTF RESMI SMK NEGERI 1 TANJUNG LAGO</p>
+            <p class="mb-4">Web dikembangkan oleh <strong>SMK NEGERI 1 TANJUNG LAGO</strong> dan <strong>Sherif</strong></p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://smkn1tanjunglago.sch.id" class="btn btn-primary cyber-btn" target="_blank">WEBSITE SEKOLAH</a>
+                <a href="https://t.me/she0rif" class="btn btn-primary cyber-btn" target="_blank">TELEGRAM ADMIN</a>
+            </div>
+        </div>
+        <p class="mt-5 text-muted">Silakan <a href="/login">Masuk</a> atau <a href="/register">Daftar</a> untuk memulai tantangan.</p>
     </div>
 </div>"""
             page.content = index
