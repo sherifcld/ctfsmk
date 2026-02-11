@@ -77,6 +77,7 @@ EOF
 
 echo -e "\n${BLUE}[3/5] Membangun dan Menjalankan Container...${NC}"
 docker-compose up -d --build
+docker-compose -f docker-compose.challenges.yml up -d --build
 
 # Pastikan container running
 echo -e "${BLUE}Menunggu container stabil...${NC}"
@@ -169,4 +170,6 @@ fi
 
 echo -e "\n${BLUE}Selesai!${NC}"
 echo -e "${GREEN}Website SMK NEGERI 1 TANJUNG LAGO CTF siap diakses di: https://$DOMAIN${NC}"
+echo -e "Challenge Web Exploit Port: 2009, 20221"
+echo -e "Gunakan 'bash update.sh' untuk menarik perubahan terbaru dari GitHub."
 echo -e "Gunakan 'docker-compose logs -f' untuk melihat log sistem."

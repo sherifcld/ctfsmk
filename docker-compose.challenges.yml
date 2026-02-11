@@ -1,0 +1,20 @@
+services:
+  web_exploit_1:
+    image: python:3.10-slim
+    command: >
+      sh -c "pip install flask && python /app/app.py"
+    volumes:
+      - ./challenges/web_exploit_1:/app
+    ports:
+      - "2009:80"
+    restart: always
+
+  web_exploit_2:
+    image: python:3.10-slim
+    command: >
+      sh -c "pip install flask && python /app/app.py"
+    volumes:
+      - ./challenges/web_exploit_2:/app
+    ports:
+      - "20221:80"
+    restart: always
