@@ -33,7 +33,11 @@ fi
 
 echo -e "\n${BLUE}[1/5] Menginstal Dependensi Sistem...${NC}"
 apt-get update
-apt-get install -y curl git apt-transport-https ca-certificates software-properties-common certbot python3-certbot-nginx
+apt-get install -y curl git apt-transport-https ca-certificates software-properties-common certbot python3-certbot-nginx python3-pip
+
+# Fix AttributeError: module 'lib' has no attribute 'X509_V_FLAG_NOTIFY_POLICY'
+echo -e "${BLUE}Memperbaiki dependensi OpenSSL/Cryptography...${NC}"
+pip3 install --upgrade pyOpenSSL cryptography
 
 # Instal Docker jika belum ada
 if ! command -v docker &> /dev/null; then
@@ -74,9 +78,17 @@ EOF
 echo -e "\n${BLUE}[3/5] Membangun dan Menjalankan Container...${NC}"
 docker-compose up -d --build
 
+# Pastikan container running
+echo -e "${BLUE}Menunggu container stabil...${NC}"
+sleep 15
+
+if ! docker ps | grep -q "nginx"; then
+    echo -e "\033[0;31mError: Container Nginx tidak berjalan. Mengecek log...${NC}"
+    docker-compose logs nginx
+    exit 1
+fi
+
 echo -e "\n${BLUE}[4/5] Menginstal SSL Certbot untuk $DOMAIN...${NC}"
-# Tunggu container siap
-sleep 10
 # Jalankan certbot
 certbot certonly --webroot -w .data/CTFd/uploads --email $EMAIL -d $DOMAIN --agree-tos --no-eff-email --non-interactive
 
@@ -130,7 +142,9 @@ EOF
     # Restart Nginx container
     docker-compose restart nginx
 else
-    echo -e "\033[0;31mGagal menginstal SSL. Pastikan domain $DOMAIN sudah diarahkan ke IP server ini.\033[0m"
+    echo -e "\033[0;31mGagal menginstal SSL. Menggunakan koneksi HTTP standar agar tetap bisa diakses...${NC}"
+    # Pastikan Nginx tetap running di port 80
+    docker-compose restart nginx
 fi
 
 echo -e "\n${BLUE}[5/5] Mengimpor Tantangan Default...${NC}"
